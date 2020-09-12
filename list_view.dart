@@ -73,8 +73,6 @@ class _ListViewState extends State<AppListView> {
           });
     }
 
-    int i = 0;
-
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
@@ -105,7 +103,6 @@ class _ListViewState extends State<AppListView> {
                   }
                   return ListView(
                     children: snapshot.data.docs.map((document) {
-                      i++;
                       return Padding(
                         padding: EdgeInsets.only(
                           left: 10.0,
